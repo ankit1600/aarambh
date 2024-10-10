@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d9658a25.css",
+    "main.js": "/static/js/main.6ad49d9c.js",
+    "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
+    "static/media/card4.jpg": "/static/media/card4.6ab5b2a9d337ecab2901.jpg",
+    "static/media/card1.jpg": "/static/media/card1.192b0e18ee094749854d.jpg",
+    "static/media/card2.jpg": "/static/media/card2.aec87d5f26dd8a818799.jpg",
+    "static/media/card3.jpg": "/static/media/card3.bc352c379e195fdeea8e.jpg",
+    "static/media/card5.jpg": "/static/media/card5.65e3b0107da85f6a75f1.jpg",
+    "static/media/card6.jpg": "/static/media/card6.0e0df4d4fa2927031835.jpg",
+    "static/media/slider-bg-1.jpg": "/static/media/slider-bg-1.89f664a740de3125164f.jpg",
+    "static/media/footer-left-pic.png": "/static/media/footer-left-pic.a89530ea73da9057b287.png",
+    "static/media/Wallpaper.jpeg": "/static/media/Wallpaper.42419ab0e9f3d43d33bc.jpeg",
+    "static/media/card7.jpeg": "/static/media/card7.96787f9c1542912e28c5.jpeg",
+    "static/media/slider-bg-2.jpg": "/static/media/slider-bg-2.44941bb45955958dc402.jpg",
+    "static/media/aarambh.png": "/static/media/aarambh.1abadb4c7814d157e4cf.png",
+    "static/media/footer-right-pic.png": "/static/media/footer-right-pic.be28adf7870a105550fc.png",
+    "index.html": "/index.html",
+    "main.d9658a25.css.map": "/static/css/main.d9658a25.css.map",
+    "main.6ad49d9c.js.map": "/static/js/main.6ad49d9c.js.map",
+    "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9658a25.css",
+    "static/js/main.6ad49d9c.js"
+  ]
+}

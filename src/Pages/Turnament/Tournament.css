@@ -1,0 +1,89 @@
+/* Overall tournament container */
+.tournament {
+  background: url(../../assets/slider-bg-1.jpg) no-repeat center;
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensures the section covers at least the full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 100px; /* Adds space at the top for the heading */
+}
+
+/* Style for the Tournament Heading */
+.tournament h1 {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
+}
+
+/* Grid container for the GameCard components */
+.gameCard-tournament {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  grid-gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: start;
+}
+
+/* Style for individual game cards */
+.gameCard-tournament {
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(
+    10px
+  ); /* Adds a blur effect to make content stand out */
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); */
+  text-align: center;
+  width: 100%; /* Full width for flexibility in grid */
+  max-width: 400px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+  transform: translateY(-5px); /* Elevation effect on hover */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.game-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Style for the tournament registration button */
+.gameCard-tournament .read-more {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gameCard-tournament .read-more:hover {
+  background-color: #e64a19;
+}
+
+@media (max-width: 600px) {
+  /* Adjust font size for smaller screens */
+  .tournament h1 {
+    font-size: 2em;
+  }
+
+  .gameCard-tournament {
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,71 @@
+/* General container styles */
+.rules-container {
+  /* max-width: 800px;
+  margin: 40px auto; */
+  height: 190vh;
+  padding: 20px;
+  background-color: #121212; /* Dark background */
+  color: #f0f0f0; /* Light text */
+  /* border-radius: 8px; */
+}
+.rule-container {
+  position: relative;
+  top: 15rem;
+  background-color: #121212;
+}
+/* Heading styles */
+.heading {
+  text-align: center;
+  color: #b01ba5;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Section title styles */
+.section-title {
+  font-size: 24px;
+  color: #b01ba5;
+  margin-bottom: 15px;
+}
+
+/* Rule list styles */
+.rule-list {
+  list-style-type: none;
+  /* padding: 0; */
+  margin-bottom: 30px;
+}
+
+.rule-list li {
+  background-color: #1e1e1e; /* Slightly lighter background for each rule */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid #b01ba5; /* Highlight with a purple border */
+  border-radius: 4px;
+}
+
+/* Font styles for each rule */
+.rule-list li strong {
+  color: #e94fcf; /* Emphasized text in pink */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  rule-container {
+    position: relative;
+    top: 10rem;
+    background-color: #121212;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .rule-list li {
+    font-size: 16px;
+  }
+}

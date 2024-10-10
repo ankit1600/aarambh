@@ -1,0 +1,148 @@
+/* Main container for all game cards */
+.game-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3a0057; /* Dark purple background */
+  padding: 20px;
+}
+
+/* Game card container */
+.game-card {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 900px;
+  /* background-color: #52276f;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); */
+}
+
+/* Image styling */
+.game-image img {
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+/* Game information section */
+.game-info {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+/* Date and category text */
+.date-category {
+  font-size: 1.5rem;
+  color: #ccccff; /* Light purple text */
+  /* margin-bottom: 10px; */
+}
+
+.category {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Game title styling */
+.game-title {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+/* Description text */
+.game-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7); /* Lighter white */
+  margin-bottom: 20px;
+}
+
+/* Read more link */
+.read-more {
+  display: inline-block;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+  min-width: 186px;
+  padding: 20px 15px;
+  margin-top: 15px;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: purple;
+  line-height: normal;
+  cursor: pointer;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  box-shadow: 10px 10px;
+}
+
+.read-more:hover {
+  background-color: white;
+  color: #b01ba5;
+}
+
+.read-more:hover {
+  color: #ff2db5; /* Pink color on hover */
+}
+
+/* Responsiveness for tablets and smaller screens */
+@media screen and (max-width: 768px) {
+  .game-card {
+    flex-direction: column; /* Stack the image and content vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .game-image img {
+    width: 100%; /* Make the image fill the available width */
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .game-info {
+    align-items: center;
+  }
+
+  .game-title {
+    font-size: 1.5rem;
+  }
+
+  .game-description {
+    font-size: 0.9rem;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsiveness for mobile screens */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .game-card {
+    padding: 10px;
+  }
+
+  .game-title {
+    font-size: 1.5rem;
+  }
+
+  .game-description {
+    font-size: 1rem;
+  }
+
+  .read-more {
+    font-size: 1rem;
+  }
+}

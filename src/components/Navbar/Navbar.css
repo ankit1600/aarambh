@@ -1,0 +1,133 @@
+/* Navbar styles */
+.navbar {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #081624;
+  position: absolute; /* Keep the navbar fixed */
+  top: 50px; /* Adjust this value to move the navbar down from the top */
+  left: 20px; /* Move the navbar 20px from the left */
+  right: 20px; /* Move the navbar 20px from the right */
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  animation: mymove 4s infinite;
+}
+
+/* Shadow animation */
+@keyframes mymove {
+  50% {
+    box-shadow: 0 0 20px 5px rgba(226, 30, 228, 0.24);
+  }
+}
+
+/* Navbar menu styles */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar-menu li {
+  position: relative;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar-menu li:hover {
+  color: #b01ba5;
+}
+
+.navbar-menu li.active {
+  border-bottom: 2px solid #b01ba5;
+}
+
+/* Navbar right-side section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar button {
+  background: none;
+  font-size: 16px;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  color: #b01ba5;
+}
+
+/* Mobile menu icon */
+.mobile-menu-icon {
+  display: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 100px; /* Ensure the dropdown appears below the navbar */
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: none;
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+  }
+
+  /* SignIn button styling inside mobile menu */
+  .mobile-signin button {
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+    min-width: 100px;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    color: purple;
+    background: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  .mobile-signin button:hover {
+    background-color: white;
+    color: #b01ba5;
+  }
+
+  /* Hide navbar-right section in mobile view */
+  .navbar-right {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block; /* Show mobile menu icon */
+  }
+}
+
+/* For medium to large screens */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .mobile-signin {
+    display: none;
+  }
+}

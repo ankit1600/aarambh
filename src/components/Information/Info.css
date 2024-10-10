@@ -1,0 +1,100 @@
+/* Overall layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 20px;
+  background-color: #0c062e; /* Dark purple background */
+  padding: 20px;
+  padding-top: 50px;
+  height: 500px;
+  color: white; /* White font color */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive design for tablet and mobile */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}
+
+/* Grid items */
+.grid-item {
+  padding: 20px;
+}
+
+/* Headings */
+.grid-item h1 {
+  font-size: 3rem; /* Default for larger screens */
+  margin-bottom: 40px;
+}
+
+.grid-item h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Adjust heading sizes for smaller screens */
+@media (max-width: 768px) {
+  .grid-item h1 {
+    font-size: 2.2rem; /* Smaller heading for mobile screens */
+  }
+
+  .grid-item h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Paragraph */
+.grid-item p {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.452);
+}
+
+/* Adjust paragraph size for smaller screens */
+@media (max-width: 768px) {
+  .grid-item p {
+    font-size: 1.5em; /* Smaller font for mobile screens */
+  }
+  .grid-container {
+    height: auto;
+  }
+}
+
+/* Span styles */
+.grid-item span {
+  color: #b01ba5;
+}
+
+/* Read More Button */
+.read-more-btn {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: white;
+  color: #4b0082;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #ccccff; /* Lighter purple on hover */
+}
+
+/* Adjust button size for smaller screens */
+@media (max-width: 768px) {
+  .read-more-btn {
+    font-size: 0.9rem; /* Slightly smaller button for mobile */
+  }
+}

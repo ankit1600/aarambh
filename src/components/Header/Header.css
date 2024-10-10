@@ -1,0 +1,138 @@
+/* Header styles */
+.header {
+  height: 60vw; /* Default height for larger screens */
+  background: url("../../assets/slider-bg-2.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  animation: fadeOut 5s linear;
+}
+
+/* Responsive height adjustments */
+@media (max-width: 768px) {
+  .header {
+    height: 80vh; /* Increase height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 100vh; /* Full height on small devices */
+  }
+}
+
+/* Content within the header */
+.header-contants {
+  text-align: center; /* Center text */
+  color: white;
+  padding: 20px 40px;
+}
+
+/* Heading (h2) styles */
+.header-contants h2 {
+  font-size: 12em; /* Default for large screens */
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Responsive heading size */
+@media (max-width: 1024px) {
+  .header-contants h2 {
+    font-size: 8em; /* Reduce font size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .header-contants h2 {
+    font-size: 6em; /* Further reduce for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-contants h2 {
+    font-size: 4em; /* Mobile screens */
+  }
+  .header img {
+    height: 70vw;
+  }
+}
+
+/* Paragraph (p) styles */
+.header-contants p {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.452);
+}
+
+/* Responsive paragraph size */
+@media (max-width: 768px) {
+  .header-contants p {
+    font-size: 1.5em; /* Smaller text for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-contants p {
+    font-size: 1.1em; /* Even smaller text for mobile screens */
+  }
+}
+
+/* Button styles */
+.header-contants button {
+  display: inline-block;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  min-width: 186px;
+  padding: 24px 30px;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: purple;
+  line-height: normal;
+  cursor: pointer;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  box-shadow: 10px 10px;
+}
+
+.header-contants button:hover {
+  background-color: white;
+  color: #b01ba5;
+}
+
+/* Responsive button adjustments */
+@media (max-width: 768px) {
+  .header-contants button {
+    padding: 18px 24px; /* Adjust button padding for tablets */
+    font-size: 12px; /* Slightly smaller text */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-contants button {
+    padding: 15px 20px; /* Smaller padding for mobile */
+    font-size: 11px; /* Smaller font size */
+  }
+}
+
+/* Keyframes for fade in and out animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0; /* Fully transparent */
+  }
+  10% {
+    opacity: 1; /* Fully visible */
+  }
+  90% {
+    opacity: 1; /* Stay visible for a while */
+  }
+  100% {
+    opacity: 0; /* Fade out to transparent */
+  }
+}

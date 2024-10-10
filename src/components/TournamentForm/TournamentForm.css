@@ -1,0 +1,107 @@
+/* Container styling */
+.form-container {
+  max-width: 500px;
+  width: 100%; /* Ensures form doesn't exceed container width */
+  padding: 20px;
+  position: relative;
+  top: 1rem;
+  left: 7rem;
+}
+
+/* Form heading */
+.form-container h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Form element styling */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  outline: none;
+  border: none; /* Removes box border */
+  border-radius: 10px;
+  border-bottom: 2px solid #ccc; /* Adds underline */
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition effect */
+  background-color: transparent; /* Makes background transparent */
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 0 0 transparent; /* No shadow initially */
+}
+.form-group input:focus {
+  animation: mymove 4s infinite; /* Purple underline on focus */
+  /* Purple shadow effect */
+}
+
+@keyframes mymove {
+  50% {
+    box-shadow: 0 8px 20px 0px rgba(126, 0, 255, 0.6);
+  }
+}
+
+/* Submit button styling */
+.submit-btn {
+  display: inline-block;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  min-width: 186px;
+  padding: 24px 30px;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: purple;
+  line-height: normal;
+  cursor: pointer;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  box-shadow: 10px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: #b01ba5;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 600px) {
+  .form-container {
+    top: 50px;
+    left: 0;
+    width: 100%;
+  }
+
+  .form-group input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 16px;
+  }
+}

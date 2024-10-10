@@ -8,9 +8,9 @@ const Navbar = ({ setShowLogin }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Toggle mobile menu visibility
-  const handleMenuToggle = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  // const handleMenuToggle = () => {
+  //   setIsMobileMenuOpen(!isMobileMenuOpen);
+  // };
   // Close mobile menu after clicking on an item
   const handleMenuItemClick = (menuItem) => {
     setMenu(menuItem);

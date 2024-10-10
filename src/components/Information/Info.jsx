@@ -4,7 +4,7 @@ import "./Info.css";
 // Data array with details for each tournament, including prizes
 const tournamentDetails = [
   {
-    entryFee: "₹50",
+    entryFee: "₹50 (coming soon...)",
     title: "Champion's Arena",
     description: "This tournament offers the following prize money:",
     per_kill: "₹35 par/kill",
@@ -26,7 +26,7 @@ const tournamentDetails = [
     ],
   },
   {
-    entryFee: "₹20",
+    entryFee: "₹20 (coming soon...)",
     title: "Survivor’s Arena",
     description: "Survivor's Arena rewards the top 3 with:",
     per_kill: "₹35 par/kill",

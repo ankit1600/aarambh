@@ -1,8 +1,15 @@
 import React from "react";
 import "./Footer.css";
 import { assets } from "../../assets/assets";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const goTOHomePag = () => {
+    navigate("/home");
+  };
+
   return (
     <>
       <section class="subscribe-section">
@@ -38,7 +45,7 @@ const Footer = () => {
               />
             </div>
             <ul class="nav-links">
-              <li>Home</li>
+              <li onClick={goTOHomePag}>Home</li>
               <li>Tournament</li>
               <li>Contact</li>
             </ul>

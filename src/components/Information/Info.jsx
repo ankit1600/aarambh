@@ -18,7 +18,7 @@ const tournamentDetails = [
     entryFee: "₹30",
     title: "Crisis Control",
     description: "In Crisis Control, the top performers receive:",
-    per_kill: "₹35 per/kill",
+    per_kill: "₹20 per/kill",
     prizes: [
       { position: "Winner", prizeMoney: "₹50" },
       { position: "2nd Prize", prizeMoney: "₹30" },
@@ -29,7 +29,7 @@ const tournamentDetails = [
     entryFee: "₹20 (coming soon...)",
     title: "Survivor’s Arena",
     description: "Survivor's Arena rewards the top 3 with:",
-    per_kill: "₹35 per/kill",
+    per_kill: "₹10 per/kill",
     prizes: [
       { position: "Winner", prizeMoney: "₹30" },
       { position: "2nd Prize", prizeMoney: "₹20" },

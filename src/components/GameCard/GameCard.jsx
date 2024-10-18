@@ -20,12 +20,11 @@ const GameCard = () => {
           <span className="date-category">
             <span className="category">Crisis Control</span>
           </span>
+          with SQUAD
           <butto
             className="read-more"
             onClick={() =>
-              handletournament(
-                "https://docs.google.com/forms/d/e/1FAIpQLSdjlh2kKrxOSgB8yZSAra7sT-7KzQNHgg78s15gg5wdRNnb8g/viewform?usp=sf_link"
-              )
+              handletournament("https://forms.gle/P59A1AVNu6Wq4hU39")
             }
           >
             Register »

@@ -18,17 +18,16 @@ const GameCard = () => {
         </div>
         <div className="game-info">
           <span className="date-category">
-            <span className="category">Crisis Control</span>
+            <span className="category">Survivor’s Arena</span>
           </span>
-          with SQUAD
-          <butto
+          <button
             className="read-more"
             onClick={() =>
               handletournament("https://forms.gle/P59A1AVNu6Wq4hU39")
             }
           >
             Register »
-          </butto>
+          </button>
         </div>
       </div>
 
@@ -54,7 +53,7 @@ const GameCard = () => {
         </div>
         <div className="game-info">
           <span className="date-category">
-            <span className="category">Survivor’s Arena</span>
+            <span className="category">Crisis Control</span>
           </span>
           <button className="read-more">
             Registration will start soon.. »

@@ -18,7 +18,7 @@ const GameCard = () => {
         </div>
         <div className="game-info">
           <span className="date-category">
-            <span className="category">Survivor’s Arena</span>
+            <span className="category">SQUAD SMACKDOWN</span>
           </span>
           <button
             className="read-more"
@@ -32,7 +32,7 @@ const GameCard = () => {
       </div>
 
       {/* Second Card */}
-      <div className="game-card">
+{/*       <div className="game-card">
         <div className="game-image">
           <img src={assets.card2} alt="Crisis Control" />
         </div>
@@ -44,10 +44,10 @@ const GameCard = () => {
             Registration will start soon.. »
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* Third Card */}
-      <div className="game-card">
+{/*       <div className="game-card">
         <div className="game-image">
           <img src={assets.card3} alt="Survivor’s Arena" />
         </div>
@@ -59,7 +59,7 @@ const GameCard = () => {
             Registration will start soon.. »
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <Info />
       <GameCard />
+      <Info />
     </div>
   );
 };

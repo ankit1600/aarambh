@@ -18,7 +18,7 @@ const GameCard = () => {
         </div>
         <div className="game-info">
           <span className="date-category">
-            <span className="category">SQUAD SMACKDOWN</span>
+            <span className="category">Crisis Control</span>
           </span>
           <button
             className="read-more"
